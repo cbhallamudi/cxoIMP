@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Crimson';
+    src: url('Crimson-Roman.eot');
+    src: url('Crimson-Roman.eot?#iefix') format('embedded-opentype'),
+        url('Crimson-Roman.woff2') format('woff2'),
+        url('Crimson-Roman.woff') format('woff'),
+        url('Crimson-Roman.ttf') format('truetype'),
+        url('Crimson-Roman.svg#Crimson-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

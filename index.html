@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>CXO League - IMP</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media_queries.css">
+
+
+    <style>
+
+      
+    </style>
+  </head>
+  <body class="scrollspy custom-gray-2-bg">
+
+    <!-- http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4 -->
+    <!-- Navigation -->
+    <nav class="navbar navbar-dark navbar-expand-lg custom-nav-text custom-black-bg shadow fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="./img/IMP_logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link px-2rem custom-nav-text font-size-32px nav-link-active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2rem custom-nav-text font-size-32px" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2rem custom-nav-text font-size-32px" href="#signup">Signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-2rem custom-nav-text font-size-32px" href="#register">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="masthead scrollspy" id="home">
+      <div class="container-fluid h-100 px-0">
+        <div id="carouselExampleIndicators" class="carousel">
+          
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item position-relative active" data-bs-interval="15000">
+              <a href="javascript:void(0);" class="position-absolute start-50 primary-gold-bg p-2 d-flex justify-content-center align-items-center text-decoration-none text-dark rounded-circle" id="play-pause">
+                <i class="play-icon fa-solid fa-play fa-2x"></i>
+              </a>
+              <h2 class="home-banner-text d-flex justify-content-center align-items-center pt-1 position-absolute primary-gold-text start-50">The World of IMP</h2>
+              <video controls mute autoplay class="banner-video" id="header-video">
+                <source src="./video/rockMusic.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video> 
+            </div>
+            <div class="carousel-item position-relative" data-bs-interval="10000">
+
+              <h2 class="home-banner-text d-flex justify-content-center align-items-center pt-1 position-absolute primary-gold-text start-50">The World of IMP</h2>
+              <img src="./img/home_banner_image.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item position-relative" data-bs-interval="5000">
+              <h2 class="home-banner-text d-flex justify-content-center align-items-center pt-1 position-absolute primary-gold-text start-50">The World of IMP</h2>
+              <img src="./img/IMP_logo.svg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5 other-sections scrollspy py-0 pt-1" id="about">
+      <div class="container-fluid">
+        <div class="row row-cols-1 row-cols-lg-2">
+            <div class="col-lg-8 custom-gray-2-bg">
+              <div id="carouselExampleIndicators1" class="carousel">
+                
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                  <div class="carousel-item position-relative active" data-bs-interval="10000">
+
+                    <img src="./img/home_banner_image.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item position-relative" data-bs-interval="15000">
+                    <a href="javascript:void(0);" class="position-absolute start-50 primary-gold-bg p-2 d-flex justify-content-center align-items-center text-decoration-none text-dark rounded-circle" id="play-pause">
+                      <i class="play-icon fa-solid fa-play fa-2x"></i>
+                    </a>
+                    <video controls mute autoplay class="banner-video" id="header-video">
+                      <source src="./video/rockMusic.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video> 
+                  </div>
+                  
+                  <div class="carousel-item position-relative" data-bs-interval="5000">
+                    <img src="./img/IMP_logo.svg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next text-dark" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="d-flex flex-column justify-content-center align-items-center p-4 custom-gray-2-bg">
+                <h2 class="primary-gold-text about-heading w-lg-85">What is IMP?</h2>
+                <p class="about-text text-white w-lg-85">IMP is India’s First Social Networking Music Streaming Platform that Solely is meant for Independent artists to collaborate, enhance their skills and promote their music to a community that is hungry for Independent Music.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 custom-gray-2-bg">
+              <div class="container mt-3 pt-lg-100px about-container-minmax-height">
+                <h2 class="about-heading text-white">Listen to Independent Music Artists</h2>
+                <form action="/action_page.php" class="needs-validation" novalidate>
+                  <div class="row g-2">
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <label class="floating-label" for="floatingInputGrid">Email address</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md">
+                      <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPwdGrid" placeholder="name@example.com" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        <label class="floating-label" for="floatingPwdGrid">Password</label>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <button type="submit" class="btn primary-gold-bg custom-black-text font-weight-700 mt-2 font-size-21vmax text-uppercase">Submit</button>
+
+                  <input type="button" value="forgot password?" class="btn btn-link text-capitalize text-white text-decoration-none">
+                </form>
+              </div>
+              <div class="position-relative custom-black-1-bg px-3 py-2">
+                <h3 class="about-text primary-gold-text">Our Events</h3>
+                <div class="flet-carousel">
+                  <div class="carousel-cell">
+                    <img src="./img/IMP_logo.svg" class="p">
+                    <p class= "n">Eddie Kinsella</p>              
+                    <p class= "b">view</p> 
+                    <p class="content"></p>
+                  </div>
+                  <div class="carousel-cell">
+                    <img src="./img/IMP_logo.svg" class="p">
+                    <p class= "n">Eddie Kinsella</p>              
+                    <p class= "b">view</p> 
+                    <p class="content"></p>
+                  </div>
+                  <div class="carousel-cell">
+                    <img src="./img/IMP_logo.svg" class="p">
+                    <p class= "n">Eddie Kinsella</p>              
+                    <p class= "b">view</p> 
+                    <p class="content"></p>
+                  </div>
+                  <div class="carousel-cell">
+                    <img src="./img/IMP_logo.svg" class="p">
+                    <p class= "n">Eddie Kinsella</p>              
+                    <p class= "b">view</p> 
+                    <p class="content"></p>
+                  </div>
+                  <div class="carousel-cell">
+                    <img src="./img/IMP_logo.svg" class="p">
+                    <p class= "n">Eddie Kinsella</p>              
+                    <p class= "b">view</p> 
+                    <p class="content"></p>
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        
+      </div>
+    </section>
+
+    <section class="other-sections scrollspy pt-lg-100px" id="signup">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col-lg-6 d-flex flex-column align-items-center">
+            <ul class="nav nav-pills nav-fill py-0 my-0 mb-0 w-100" id="pills-tab" role="tablist">
+              <li class="nav-item me-1" role="presentation">
+                <button class="nav-link active" id="pills-artist-tab" data-bs-toggle="pill" data-bs-target="#pills-artist" type="button" role="tab" aria-controls="pills-artist" aria-selected="true">Artist</button>
+              </li>
+              <li class="nav-item ms-1" role="presentation">
+                <button class="nav-link" id="pills-enthusiast-tab" data-bs-toggle="pill" data-bs-target="#pills-enthusiast" type="button" role="tab" aria-controls="pills-enthusiast" aria-selected="false">Enthusiast</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-artist" role="tabpanel" aria-labelledby="pills-artist-tab">...
+                <form action="/action_page.php" class="needs-validation" novalidate>
+                  <div class="row g-2">
+                    <div class="col-md-6">
+                      
+                        <input type="text" class="form-control" id="artistInput1" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      
+                        <input type="text" class="form-control" id="artistInput2" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-6">
+                      
+                        <input type="text" class="form-control" id="artistInput3" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      
+                        <input type="text" class="form-control" id="artistInput4" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="artistInput5" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="artistInput6" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="artistInput7" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="artistInput8" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="artistInput9" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="artistInput10" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                  </div>
+                  <div class="col-12 py-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidArtistCheck" required>
+                      <label class="form-check-label primary-gold-text" for="invalidArtistCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn primary-gold-bg custom-black-text font-weight-700 mt-2 font-size-21vmax text-uppercase">Submit</button>
+
+                  
+                </form>
+              </div>
+              <div class="tab-pane fade" id="pills-enthusiast" role="tabpanel" aria-labelledby="pills-enthusiast-tab">...
+                 <form action="/action_page.php" class="needs-validation" novalidate>
+                  <div class="row g-2">
+                    <div class="col-md-6">
+                      
+                        <input type="text" class="form-control" id="enthusiastInput1" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      
+                        <input type="text" class="form-control" id="enthusiastInput2" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-md-6">
+                      
+                        <input type="text" class="form-control" id="enthusiastInput3" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-md-6">
+                      
+                        <input type="text" class="form-control" id="enthusiastInput4" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="enthusiastInput5" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="enthusiastInput6" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="enthusiastInput7" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="enthusiastInput8" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="enthusiastInput9" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Valid Email.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+
+                    <div class="col-12">
+                      
+                        <input type="text" class="form-control" id="enthusiastInput10" placeholder="Some Input" value="" required>
+                        <div class="valid-feedback">Good to go.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                  </div>
+                  <div class="col-12 py-2">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidArtistCheck" required>
+                      <label class="form-check-label primary-gold-text" for="invalidArtistCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn primary-gold-bg custom-black-text font-weight-700 mt-2 font-size-21vmax text-uppercase">Submit</button>
+
+                  
+                </form>
+              </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-start py-4 ms-auto">
+              <h2 class="text-white font-weight-600 font-size-4vmax">Explore The Music</h2>
+              <p class="text-white font-size-16vmax font-weight-400">The Platform hosts a community that brings the professionals and Enthusiasts together to spread a shared a passion of making Music and Learning from one another.</p>
+              <p class="text-white font-size-16vmax font-weight-400">If you are an indie Musician wanting to be around a circle that shares your passion and pain, or an enthusiast looking for Underrated Music, Music that you could not find because of the Commercial Noise, We proudly present to you IMP.</p>
+            </div>
+          </div>
+          <!-- <div class="col-lg-2"></div>  -->
+          <div class="col-lg-6">
+            <div class="row mx-lg-auto row-cols-1 row-cols-lg-2">
+              <div class="col-lg-6 px-lg-0 position-relative register-image-container">
+                <img src="./img/registerImage1.png" class="img-fluid" alt="...">
+                <div class="position-absolute w-100 h-100 bg-dark opacity-75 top-0 start-0"></div>
+                <div class="px-lg-0 px-4 d-flex justify-content-end align-items-end position-absolute w-100 h-100 top-0 start-0">
+                  <p class="text-white font-weight-600 font-size-16vmax w-lg-75">Provide us with your Details and an Original Track that you made</p>
+                  <h3 class="text-white font-size-42vmax d-flex justify-content-center align-items-center p-2">1</h3>
+                </div>               
+              </div>
+              <div class="col-lg-6 px-lg-0 position-relative register-image-container">
+                <img src="./img/registerImage2.png" class="img-fluid" alt="...">
+                
+                <div class="position-absolute w-100 h-100 bg-dark opacity-75 top-0 start-0"></div>
+                <div class="px-lg-0 px-4 d-flex justify-content-end align-items-end position-absolute w-100 h-100 top-0 start-0">
+                  <p class="text-white font-weight-600 font-size-16vmax w-lg-75">We will review your Track under Plagiarism to Qualify as an Original</p>
+                  <h3 class="text-white font-size-42vmax d-flex justify-content-center align-items-center p-2">2</h3>
+                </div>                 
+              </div>
+              <div class="col-lg-6 px-lg-0 position-relative register-image-container">
+                <img src="./img/registerImage3.png" class="img-fluid" alt="..."> 
+                <div class="position-absolute w-100 h-100 bg-dark opacity-75 top-0 start-0"></div>
+                <div class="px-lg-0 px-4 d-flex justify-content-end align-items-end position-absolute w-100 h-100 top-0 start-0">
+                  <p class="text-white font-weight-600 font-size-16vmax w-lg-75">You will get an Approval Notification on your email qualifying you an Artist</p>
+                  <h3 class="text-white font-size-42vmax d-flex justify-content-center align-items-center p-2">3</h3>
+                </div>  
+              </div>
+              <div class="col-lg-6 px-lg-0 position-relative register-image-container">
+                <img src="./img/registerImage4.png" class="img-fluid" alt="...">
+                
+                <div class="position-absolute w-100 h-100 bg-dark opacity-75 top-0 start-0"></div>
+                <div class="px-lg-0 px-4 d-flex justify-content-end align-items-end position-absolute w-100 h-100 top-0 start-0">
+                  <p class="text-white font-weight-600 font-size-16vmax w-lg-75">Use the Unique Pin-code that you will receive to complete the Sign-up Process</p>
+                  <h3 class="text-white font-size-42vmax d-flex justify-content-center align-items-center p-2">4</h3>
+                </div>
+              </div>
+              <div class="col-12">
+                <p class="text-white font-weight-600 font-size-21vmax my-4">By joining you can listen to the latest albums released by you favourite Independent Music artists .</p>
+              </div>
+            </div>
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section class="other-sections scrollspy pt-lg-100px" id="register">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-lg-4 g-4">
+          <div class="col">
+            <div class="text-white custom-black-bg card h-100">
+              <div class="card-header d-flex justify-content-center align-items-center  min-height-105px font-size-21vmax text-center">Community</div>
+              <div class="card-body">
+                <p class="card-text font-size-16vmax">When a group of likeminded individuals meet, they almost always hit it off by sharing their experiences and stories. An Independent Artist Community already exists in every nook and corner of the world, who want to spread their revolution and burning desires through their music. IMP is simply giving all of these trailblazers a digital room to do the same.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white custom-black-bg h-100">
+              <div class="card-header d-flex justify-content-center align-items-center  min-height-105px font-size-21vmax text-center">Vision</div>
+              <div class="card-body">
+                <p class="card-text font-size-16vmax">To Build the Biggest Independent Artist Community thriving on Passion afar and free from dependency on Film Music, and to streamline the Indie Community by providing a digital space for the fast-evolving culture and acceptance of Independent Music.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white custom-black-bg h-100">
+              <div class="card-header d-flex justify-content-center align-items-center  min-height-105px font-size-21vmax text-center">IMP3 – A Free Straeming Platform</div>
+              <div class="card-body">
+                <p class="card-text font-size-16vmax">A Library of Original tracks from the Local Artists of IMP bound by no strings that can be listened through an AD-Free Steaming platform. The Library is Segregated Genre wise for you to Vibe on based on the Mood you are in. Through IMP3, you can add songs to your personal Playlist as well. The whole reason the streaming platform is free is to truly help artists improve their reach and give users some quality music.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-white custom-black-bg h-100">
+              <div class="card-header d-flex justify-content-center align-items-center  min-height-105px font-size-21vmax text-center">Knowledge Centre</div>
+              <div class="card-body">
+                <p class="card-text font-size-16vmax">A Curated Curriculum that covers a vast domain of Subjects, subjects that are important to current trends and that are needed to be excelled at as an Artist such as Music Marketing, Sound Designing, Mixing and Mastering, etc.</p>
+                <p class="card-text font-size-16vmax">We intend to make IMP a One Stop Solution for the main needs of any Label-less Artist who is hungry to grow.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column custom-black-bg mt-4 p-4">
+          <h3 class="text-white font-size-3vmax">Already Registered? Set up your password here</h3>
+          <p class="text-white font-size-16vmax">(Copy paste the pincode that has been sent to your mail)</p>
+          <div class="d-flex justify-content-center align-items-center">
+            <form action="/action_page.php" class="needs-validation w-lg-50" novalidate>
+              <div class="row g-2">
+                <div class="col-md-6">
+                  
+                    <input type="text" class="form-control" id="registerInput1" placeholder="Some Input" value="" required>
+                    <div class="valid-feedback">Valid Email.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="col-md-6">
+                  
+                    <input type="text" class="form-control" id="registerInput2" placeholder="Some Input" value="" required>
+                    <div class="valid-feedback">Good to go.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+                <div class="col-md-6">
+                  
+                    <input type="text" class="form-control" id="registerInput3" placeholder="Some Input" value="" required>
+                    <div class="valid-feedback">Valid Email.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="col-md-6">
+                  
+                    <input type="text" class="form-control" id="registerInput4" placeholder="Some Input" value="" required>
+                    <div class="valid-feedback">Good to go.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                </div>
+
+                <div class="col-12 text-center">
+                  <button type="submit" class="btn primary-gold-bg custom-black-text font-weight-700 mt-2 font-size-21vmax text-uppercase">Submit</button>
+                </div>
+              </div>
+            </form>    
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="d-flex justify-content-center custom-gray-2-bg align-items-center p-4 mt-4">
+      <p class="text-white">© IMP <span id="currYear"></span></p>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script>
+
+      $(document).ready(function(){
+        $(".b").click(function(){
+          $(this).toggleClass("b");
+          $(this).toggleClass("b-selected");
+       });
+      });
+
+      var elem = document.querySelector('.flet-carousel');
+      var flkty = new Flickity( elem, {
+        // options
+        cellalign: 'right',
+        pageDots: false,
+        groupCells: '20%',
+        selectedAttraction: 0.03,
+        friction: 0.15,
+        wrapAround: true
+      });
+      var flkty = new Flickity( '.flet-carousel', {
+        // freeScroll: true,
+      });
+
+      $(window).bind('scroll', function() {
+          var currentTop = $(window).scrollTop();
+          var elems = $('.scrollspy');
+          elems.each(function(index){
+            var elemTop   = $(this).offset().top;
+            var elemBottom  = elemTop + $(this).height();
+            if(currentTop >= elemTop && currentTop <= elemBottom){
+              var id    = $(this).attr('id');
+            $(".nav-link.px-2rem.custom-nav-text.font-size-32px").removeClass("nav-link-active");
+            $('a[href="#' + id+ '"]').addClass("nav-link-active");
+            }
+          })
+      }); 
+      
+
+      
+      var playPauseBtn = document.getElementById("play-pause");
+      var player = document.getElementById("header-video");
+      player.removeAttribute("controls");
+      playPauseBtn.onclick = function() {
+        if (player.paused) {
+          player.play();
+          this.innerHTML = '<i class="play-icon fas fa-pause fa-2x"></i>';
+          $("#play-pause").css("opacity",0.3);
+        } else {
+          player.pause();
+          this.innerHTML = '<i class="play-icon fas fa-play fa-2x"></i>';
+          $("#play-pause").css("opacity",1);
+        }
+      };
+
+      $(".nav-link.px-2rem.custom-nav-text.font-size-32px").click(function(){
+        $(".nav-link.px-2rem.custom-nav-text.font-size-32px").removeClass("nav-link-active");
+        $(this).addClass("nav-link-active");
+      });
+
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated');
+            }, false)
+          })
+      })();
+      const d = new Date();
+      let year = d.getFullYear();
+      document.getElementById("currYear").innerHTML = year;
+    </script>
+  </body>
+</html>

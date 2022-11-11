@@ -1,0 +1,36 @@
+
+
+@media screen and (width > 992px){
+	.px-1rem{
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+	.px-2rem{
+		padding-left: 2rem !important;
+		padding-right: 2rem !important;
+	}
+	.w-lg-50{
+		width: 50% !important;
+	}
+	.w-lg-60{
+		width: 60% !important;
+	}
+	.w-lg-75{
+		width: 75% !important;
+	}
+	.w-lg-85{
+		width: 85% !important;
+	}
+	.w-lg-90{
+		width: 85% !important;
+	}
+	.pt-lg-100px{
+		padding-top: 100px !important;
+	}
+}
+@media screen and (width <= 992px){
+	.about-container-minmax-height {
+		min-height: 280px;
+		max-height: 380px;
+	}
+}	
