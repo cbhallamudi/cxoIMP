@@ -29,7 +29,7 @@ body{
   color: var(--custom-black);
   background-color: var(--primary-gold);
   font-weight: 700;
-  font-size: 2.1vmax; 
+  font-size: 1.2vmax; 
 }
 
 
@@ -72,20 +72,23 @@ body{
   font-size: 32px !important;
 }
 
-.font-size-42vmax{
-  font-size: 4.2vmax !important;
-}
-.font-size-4vmax{
-  font-size: 4vmax !important;
-}
-.font-size-3vmax{
-  font-size: 3vmax !important;
-}
 .font-size-21vmax{
   font-size: 2.1vmax !important;
 }
+.font-size-2vmax{
+  font-size: 2vmax !important;
+}
+.font-size-15vmax{
+  font-size: 1.5vmax !important;
+}
+.font-size-18vmax{
+  font-size: 1.8vmax !important;
+}
 .font-size-16vmax{
   font-size: 1.6vmax !important;
+}
+.font-size-12vmax{
+  font-size: 1.2vmax !important;
 }
 
 .pt-lg-100px{
@@ -155,7 +158,8 @@ body{
 }
 
 #carouselExampleIndicators .carousel-item > img{
-  height: 100vh;
+  height: 100vh !important;
+  max-height: 100vh !important;
 }
 
 .floating-label{
@@ -187,7 +191,7 @@ body{
   width: 100%;
 }
 
-#play-pause{
+#play-pause, #play-pause1, #play-pause2{
   top: 49%;
 }
 
@@ -222,13 +226,13 @@ body{
 
 .about-heading{
   font-weight: 700;
-  font-size: 4.2vmax;
+  font-size: 2.1vmax;
 }
 
 .about-text{
   font-weight: 600;
   letter-spacing: 0em;
-  font-size: 2.1vmax;
+  font-size: 1.6vmax;
 }
 
 /*================= Flit Carousel ===================*/
@@ -363,8 +367,8 @@ body{
 }
 
 .about-container-minmax-height{
-  min-height: 380px;
-  max-height: 380px;
+  min-height: 480px;
+  max-height: 480px;
 }
 
 .register-image-container{
