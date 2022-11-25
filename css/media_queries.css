@@ -1,4 +1,12 @@
+@media screen and (width > 1600px) {
+	.font-size-12vmax, .about-text, .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+		font-size: 18px !important;
+	}
 
+	.font-size-16vmax, .about-heading, .font-size-21vmax{
+		font-size: 28px !important;
+	}
+}
 
 @media screen and (width > 992px){
 	.px-1rem{

@@ -1,6 +1,7 @@
 :root{
     --custom-black: #1E1E1E;
     --custom-black-1: #2B2B2B;
+    --custom-black-opacity: #2B2B2B88;
     --custom-nav-text: #F9F9F9;
     --primary-gold: #f8ab1a;
     --custom-gray-1: #676767;
@@ -16,7 +17,7 @@ body{
 }
 
 .container-fluid{
-  max-width: 1600px;
+/*  max-width: 1600px;*/
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -32,6 +33,9 @@ body{
   font-size: 1.2vmax; 
 }
 
+.custom-black-opacity-bg{
+  background-color: var(--custom-black-opacity);
+}
 
 .custom-black-bg{
   background-color: var(--custom-black) !important;
@@ -119,11 +123,22 @@ body{
 .opacity-75{
   opacity: 0.75 !important;
 }
+.opacity-85{
+  opacity: 0.85 !important;
+}
+.opacity-90{
+  opacity: 0.90 !important;
+}
 
-.other-sections{
-  min-height: 100vh;
-/*  padding-top: 100px;*/
+.ls-03{
+  letter-spacing: 0.3 !important;
+}
+
+.other-sections {
+  min-height: 50vh;
+  /* padding-top: 100px; */
   background-color: #4A4848;
+  max-height: fit-content;
 }
 
 .masthead {
@@ -230,9 +245,9 @@ body{
 }
 
 .about-text{
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: 0em;
-  font-size: 1.6vmax;
+  font-size: 1.2vmax;
 }
 
 /*================= Flit Carousel ===================*/
