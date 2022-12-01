@@ -23,14 +23,23 @@
 	.w-lg-60{
 		width: 60% !important;
 	}
+	.w-lg-65{
+		width: 65% !important;
+	}
+	.w-lg-70{
+		width: 70% !important;
+	}
 	.w-lg-75{
 		width: 75% !important;
+	}
+	.w-lg-80{
+		width: 80% !important;
 	}
 	.w-lg-85{
 		width: 85% !important;
 	}
 	.w-lg-90{
-		width: 85% !important;
+		width: 90% !important;
 	}
 	.pt-lg-20px{
 		padding-top: 20px !important;
@@ -39,9 +48,65 @@
 		padding-top: 100px !important;
 	}
 }
+@media screen and (width <= 1200px){
+	#register .card .card-body > .img-fluid{
+		width: 100%;
+	}
+
+	.font-size-xl-12vmax{
+		font-size: 1.8vmax !important;
+	}
+}
 @media screen and (width <= 992px){
 	.about-container-minmax-height {
 		min-height: 280px;
 		max-height: 380px;
 	}
+
+	.home-banner-text {
+		font-size: 3vmax;
+	}
+	.masthead{
+		height: auto;
+		max-height: 430px;
+	}
+
+	#carouselExampleIndicators .banner-video {
+		max-height: 430px;
+	}
+
+	#carouselExampleIndicators1 .carousel-item > img{
+	  height: 100%;
+	  max-height: fit-content;
+	}
+
+	.whatIsIMP{
+		height: auto !important;
+	}
+
+	.other-sections {
+		margin-top: 1rem;
+	}
+
+	/*input[type="submit"], button[type="submit"]{
+		width: 80% !important;
+		margin: 1rem auto !important;
+	}*/
+/*
+	.row > * {
+		margin-top: 1rem;
+	}*/
+
+	.about-heading{
+		text-align: center;
+	}
+	#register .card .card-body > .img-fluid, .register-image-container > .img-fluid{
+		width: 100%;
+	}
 }	
+@media screen and (width <= 575px){
+
+	.font-size-sm-12vmax{
+		font-size: 1.8vmax !important;
+	}
+}

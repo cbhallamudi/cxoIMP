@@ -14,10 +14,16 @@ window.onscroll = function() {
 } 
 
 $(document).ready(function(){
+
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
   $(".b").click(function(){
     $(this).toggleClass("b");
     $(this).toggleClass("b-selected");
+
   });
+    console.log(window.innerWidth);
 
   setInterval(function () {
     var playerId = $(".carousel-item.active video").attr("id");
@@ -45,6 +51,14 @@ $(document).ready(function(){
   //   console.log($(".carousel-item.active video").attr("id"));
   // });
 });
+
+// $(window).on("orientationchange", function( event ) {
+//   console.log( "This device is in " + window.innerWidth + "px");
+//   $(".banner-video").css({
+//     width: window.innerWidth+"px",
+//     height: window.innerWidth+"px"
+//   })
+// });
 
 var elem = document.querySelector('.flet-carousel');
 var flkty = new Flickity( elem, {
@@ -145,4 +159,4 @@ $(".nav-link.px-2rem.custom-nav-text").click(function(){
 const d = new Date();
 let year = d.getFullYear();
 document.getElementById("currYear").innerHTML = year;
-    
+

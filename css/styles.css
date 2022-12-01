@@ -16,6 +16,35 @@ body{
   font-family: 'Crimson';
 }
 
+.form-check-input:checked[type="checkbox"] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+}
+
+.form-check-input:checked {
+  background-color: var(--primary-gold);
+  border-color: var(--primary-gold);
+}
+
+.invalid-feedback {
+  color: var(--primary-gold);
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--primary-gold) !important;
+}
+
+.tooltip > .tooltip-inner{
+  background-color: var(--primary-gold);
+  color: var(--custom-black);
+}
+
+.tooltip-arrow {display: none !important;}
+
+.tooltip-h4{
+  color: #000 !important;
+  font-weight: 500;
+}
+
 .container-fluid{
 /*  max-width: 1600px;*/
 }
@@ -91,7 +120,7 @@ body{
 .font-size-16vmax{
   font-size: 1.6vmax !important;
 }
-.font-size-12vmax{
+.font-size-sm-12vmax,.font-size-xl-12vmax,.font-size-12vmax{
   font-size: 1.2vmax !important;
 }
 
@@ -136,7 +165,7 @@ body{
 
 .other-sections {
   min-height: 50vh;
-  /* padding-top: 100px; */
+/*   padding-top: 100px; */
   background-color: #4A4848;
   max-height: fit-content;
 }
@@ -167,7 +196,7 @@ body{
   max-height: 500px;
 }
 
-.carousel-item > img{
+#carouselExampleIndicators1 .carousel-item > img{
   height: 100vh;
   max-height: 500px !important;
 }
@@ -250,6 +279,10 @@ body{
   font-size: 1.2vmax;
 }
 
+.whatIsIMP{
+  height: calc(100% - 500px);
+}
+
 /*================= Flit Carousel ===================*/
 
 /* no circle */
@@ -304,7 +337,7 @@ body{
   transition: all .3s ease;
   opacity: 0.8;
   background: #b9b9b9;
-  filter: blur(2px);
+  filter: blur(3px);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -315,7 +348,7 @@ body{
     filter: blur(0);
     opacity: 1;
     background: white ;
-    transform: scale(1.1);
+    transform: scale(1.5);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
     
@@ -348,8 +381,8 @@ body{
  /* picture */
 .carousel-cell .p {
   border-radius: 15px;
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   counter-increment: carousel-cell;
 }
     
@@ -396,3 +429,4 @@ body{
 .register-image-container:hover > img{
   transform: scale(1.2);
 }
+
