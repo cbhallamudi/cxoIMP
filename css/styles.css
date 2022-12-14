@@ -2,6 +2,9 @@
     --custom-black: #1E1E1E;
     --custom-black-1: #2B2B2B;
     --custom-black-opacity: #2B2B2B88;
+    --custom-black-opacity1: #2B2B2B55;
+    --custom-orange-opacity: #A4755F55;
+    --custom-orange-opacity1: #A4755F88;
     --custom-nav-text: #F9F9F9;
     --primary-gold: #f8ab1a;
     --custom-gray-1: #676767;
@@ -64,6 +67,15 @@ body{
 
 .custom-black-opacity-bg{
   background-color: var(--custom-black-opacity);
+}
+.custom-black-opacity-bg1{
+  background-color: var(--custom-black-opacity1);
+}
+.custom-orange-opacity-bg{
+  background-color: var(--custom-orange-opacity);
+}
+.custom-orange-opacity-bg1{
+  background-color: var(--custom-orange-opacity1);
 }
 
 .custom-black-bg{
@@ -166,8 +178,21 @@ body{
 .other-sections {
   min-height: 50vh;
 /*   padding-top: 100px; */
-  background-color: #4A4848;
+/*  background-color: #4A484855;*/
   max-height: fit-content;
+}
+
+#about{
+  background-image: url("../img/second_section.svg");
+  background-size: cover;
+}
+#signup{
+  background-image: url("../img/third_section.svg");
+  background-size: cover;
+}
+#register{
+  background-image: url("../img/fourth_section.svg");
+  background-size: cover;
 }
 
 .masthead {
