@@ -1,10 +1,19 @@
 @media screen and (width > 1600px) {
-	.font-size-12vmax, .about-text, .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
-		font-size: 18px !important;
+	/*.font-size-12vmax, .about-text, .nav-pills .nav-link.active, .nav-pills .show > .nav-link{
+		font-size: 16px !important;
 	}
 
 	.font-size-16vmax, .about-heading, .font-size-21vmax{
 		font-size: 28px !important;
+	}*/
+
+}
+@media screen and (width > 1200px) {
+	.w-xl-50-lg-70{
+		width: 50% !important;
+	}
+	.w-xl-75{
+		width: 75% !important;
 	}
 }
 
@@ -29,6 +38,9 @@
 	.w-lg-70{
 		width: 70% !important;
 	}
+	.w-xl-50-lg-70{
+		width: 70% !important;
+	}
 	.w-lg-75{
 		width: 75% !important;
 	}
@@ -36,6 +48,9 @@
 		width: 80% !important;
 	}
 	.w-lg-85{
+		width: 85% !important;
+	}
+	.w-xl-65-lg-85{
 		width: 85% !important;
 	}
 	.w-lg-90{
@@ -49,6 +64,10 @@
 	}
 }
 @media screen and (width <= 1200px){
+	.home-banner-text{
+		font-size: 4.2vmax;
+	}
+
 	#register .card .card-body > .img-fluid{
 		width: 100%;
 	}
@@ -58,21 +77,25 @@
 	}
 }
 @media screen and (width <= 992px){
+	.w-xl-50-lg-70{
+		width: 50% !important;
+	}
+
 	.about-container-minmax-height {
 		min-height: 280px;
 		max-height: 380px;
 	}
 
 	.home-banner-text {
-		font-size: 3vmax;
+		font-size: max(2.7vmax,48px);
 	}
 	.masthead{
-		height: auto;
-		max-height: 430px;
+		height: 100vh !important;
+/*		max-height: 430px;*/
 	}
 
 	#carouselExampleIndicators .banner-video {
-		max-height: 430px;
+		max-height: 100%;
 	}
 
 	#carouselExampleIndicators1 .carousel-item > img{
@@ -104,9 +127,58 @@
 		width: 100%;
 	}
 }	
-@media screen and (width <= 575px){
+@media screen and (width < 768px){
+	.home-banner-text {
+		 width: 100%;
+		 text-align: center; 
+	}	
+}
 
-	.font-size-sm-12vmax{
-		font-size: 1.8vmax !important;
+@media screen and (width < 575px){
+	.custom-position-sm-absolute{
+		position: static !important;
+	}
+	.instructions-bg-sm-opacity{
+		background-color: var(--custom-black-opacity2) !important;
+	}
+	.bg-gradient-tbl{
+		background-image: linear-gradient(to bottom left, #3F3E3E88 75%, #f8ab1a);
+	}
+
+	.bg-gradient-tbr{
+		background-image: linear-gradient(to bottom right, #3F3E3E88 75%, #f8ab1a);
+	}
+
+	.register-sm-opacity-85{
+	  opacity: 0.5 !important;
+	}
+
+	.register-instructions-container{
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		background-image: url("../img/register-sm-bg-img.jpg");
+	}
+	/*.register-image-container:nth-child(1){
+		background-image: url("../img/registerImage1.png");
+	}
+	.register-image-container:nth-child(2){
+		background-image: url("../img/registerImage2.png");
+		
+	}
+	.register-image-container:nth-child(3){
+		background-image: url("../img/registerImage3.png");
+		
+	}
+	.register-image-container:nth-child(4){
+		background-image: url("../img/registerImage4.png");
+		
+	}*/
+
+	.about-heading {
+		font-size: 20px !important;
+	}
+	.form-control, .font-size-sm-12vmax{
+		font-size: 16px !important;
 	}
 }
