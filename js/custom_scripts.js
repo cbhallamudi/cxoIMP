@@ -25,12 +25,18 @@ $(document).ready(function(){
   });
     console.log(window.innerWidth);
 
-  // setInterval(function () {
-  //   var playerId = $(".carousel-item.active video").attr("id");
-  //   var player = document.getElementById(playerId);
-  //   console.log(playerId);
-  //   player.play();
-  // }, 17000);
+  setInterval(function () {
+    var banVid = $('.banner-video');
+    for(bv = 0; bv < banVid.length; bv++){
+      $('.banner-video')[bv].pause();
+      $('.banner-video')[bv].currentTime = 0;
+    }
+        
+    var playerId = $(".carousel-item.active video").attr("id");
+    var player = document.getElementById(playerId);
+    console.log(playerId);
+    player.play();
+  }, 17000);
 
   // pause: "false"
   $('.carousel').carousel({
